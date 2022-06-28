@@ -25,7 +25,11 @@ impl Table {
     let c: usize = col.try_into().unwrap();
     let r: usize = row.try_into().unwrap();
 
-    return self.table.get(c).unwrap().get(r).unwrap();
+    return self.table
+      .get(c)
+      .unwrap()
+      .get(r)
+      .unwrap();
   }
 
   pub fn set(&mut self, col : i32, row : i32, state : bool) {
@@ -33,7 +37,12 @@ impl Table {
     let c: usize = col.try_into().unwrap();
     let r: usize = row.try_into().unwrap();
 
-    let cell = self.table.get_mut(c).unwrap().get_mut(r).unwrap();
+    let cell = self.table
+      .get_mut(c)
+      .unwrap()
+      .get_mut(r)
+      .unwrap();
+
     cell.set_state(state);
   }
 

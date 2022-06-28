@@ -10,4 +10,3 @@ authors = ["Rza Ismayilov <rzaismail82@gmail.com>"]
 rand = "0.8"
 ansi_term = "0.12.1"
 sdl2 = "0.35"
-# array2d = "0.2.1"
