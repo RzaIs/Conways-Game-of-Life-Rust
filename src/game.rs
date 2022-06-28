@@ -26,7 +26,7 @@ impl Game {
 
     while running {
 
-      for sub_vec in self.board.old_table.iter() {
+      for sub_vec in self.board.get_table() {
         for cell in sub_vec {
           self.screen.render(cell);
         }

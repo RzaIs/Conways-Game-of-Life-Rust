@@ -4,10 +4,10 @@ use crate::table::Table;
 use rand::Rng;
 
 pub struct Board {
-  pub cols : i32,
-  pub rows : i32,
-  pub old_table : Table,
-  pub new_table : Table,
+  cols : i32,
+  rows : i32,
+  old_table : Table,
+  new_table : Table,
 }
 
 impl Board {
@@ -110,5 +110,9 @@ impl Board {
       }
     }
     self.copy_table();
+  }
+
+  pub fn get_table(&self) -> &Vec<Vec<Cell>> {
+    return self.old_table.iter();
   }
 }
